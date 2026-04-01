@@ -1100,8 +1100,8 @@ ul  { list-style: none; }
 
 .entrevistas__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
   justify-items: center;
 }
 
@@ -1118,13 +1118,12 @@ ul  { list-style: none; }
   border-radius: var(--radius) !important;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .entrevistas__grid {
     grid-template-columns: repeat(2, 1fr);
   }
   .entrevistas__item:last-child {
-    grid-column: 1 / -1;
-    max-width: 340px;
+    grid-column: auto;
   }
 }
 
