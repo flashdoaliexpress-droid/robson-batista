@@ -4,7 +4,7 @@
 :root {
   --white:        #FFFFFF;
   --bg:           #FFFFFF;
-  --bg-alt:       #F7F4EE;
+  --bg-alt:       #DFB05A;
   --footer-bg:    #0D0D0D;
   --hero-bg:      #0D0D0D;
 
@@ -429,15 +429,16 @@ ul  { list-style: none; }
 ════════════════════════════════════════════════════════════════ */
 .numeros {
   background: var(--bg-alt);
-  padding: 48px 0;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  padding: 56px 0;
+  border-top: 1px solid rgba(0,0,0,0.10);
+  border-bottom: 1px solid rgba(0,0,0,0.10);
 }
 
 .numeros__grid {
   display: flex;
   justify-content: center;
   gap: 80px;
+  margin-bottom: 0;
 }
 
 .numero-item {
@@ -453,7 +454,7 @@ ul  { list-style: none; }
   font-size: clamp(3rem, 6vw, 4.8rem);
   font-weight: 700;
   line-height: 1;
-  color: var(--accent);
+  color: var(--text);
   letter-spacing: -0.02em;
 }
 .numero-item__value sup { font-size: 0.45em; vertical-align: super; }
@@ -464,8 +465,29 @@ ul  { list-style: none; }
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--text-sec);
+  color: var(--text);
 }
+
+.numeros__tagline {
+  text-align: center;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text);
+  margin-bottom: 32px;
+}
+
+.numeros__subtitle {
+  text-align: center;
+  max-width: 680px;
+  margin: 32px auto 0;
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.75;
+}
+.numeros__subtitle strong { font-weight: 700; color: var(--text); }
 
 /* ════════════════════════════════════════════════════════════════
    SOBRE
@@ -1088,6 +1110,32 @@ ul  { list-style: none; }
 
 /* Fallback when no bg image */
 .cta-final { background: var(--hero-bg); }
+
+/* ════════════════════════════════════════════════════════════════
+   GOLD BACKGROUND OVERRIDES
+   Sections using --bg-alt are now gold; ensure contrast for text
+   and elements that previously used --accent as color.
+════════════════════════════════════════════════════════════════ */
+.como-funciona .eyebrow,
+.servicos .eyebrow,
+.depoimento .eyebrow,
+.faq .eyebrow,
+.entrevistas .eyebrow,
+.bonus .eyebrow { color: var(--text); }
+
+.como-funciona .hero__title-gold { color: var(--text); }
+
+.resultado-card { border-color: rgba(0,0,0,0.12); }
+.resultado-card:hover { border-color: rgba(0,0,0,0.28); box-shadow: var(--shadow-md); }
+.resultado-card .resultado-card__icon { color: var(--text); }
+
+.sobre__certs { border-left-color: var(--text); }
+
+.faq-item,
+.faq-item:first-child { border-color: rgba(0,0,0,0.15); }
+
+.depo-destaque { border-top-color: var(--text); }
+.depo-destaque__quote-mark { color: var(--text); }
 
 /* ════════════════════════════════════════════════════════════════
    ENTREVISTAS
