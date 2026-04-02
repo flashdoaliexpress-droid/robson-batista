@@ -397,7 +397,7 @@ ul  { list-style: none; }
   text-transform: uppercase;
   color: var(--accent);
   position: absolute;
-  top: calc(var(--nav-h) + 36px);
+  top: calc(var(--nav-h) + 60px);
   left: 28px;
   z-index: 3;
   margin: 0;
