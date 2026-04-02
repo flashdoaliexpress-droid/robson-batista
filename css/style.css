@@ -1328,6 +1328,16 @@ ul  { list-style: none; }
   .hero__title { font-size: clamp(2.6rem, 10vw, 3.4rem); }
   .hero__subtitle { font-size: 0.95rem; }
 
+  .hero__eyebrow {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-bottom: 0;
+    z-index: 3;
+  }
+
   /* Sections */
   .sobre { padding: 0; }
   .sobre__inner { grid-template-columns: 1fr; }
