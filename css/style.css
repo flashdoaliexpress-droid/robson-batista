@@ -375,6 +375,7 @@ ul  { list-style: none; }
   position: relative;
   z-index: 2;
   width: 100%;
+  align-self: stretch;
   padding-top: 60px;
   padding-bottom: 80px;
 }
@@ -398,7 +399,7 @@ ul  { list-style: none; }
   color: var(--accent);
   margin-bottom: 0;
   position: absolute;
-  top: calc(var(--nav-h) + 22px);
+  top: 22px;
   left: 28px;
   z-index: 3;
 }
@@ -1333,7 +1334,7 @@ ul  { list-style: none; }
   .hero__subtitle { font-size: 0.95rem; }
 
   .hero__eyebrow {
-    top: calc(var(--nav-h) + 16px);
+    top: 16px;
     left: 18px;
     right: auto;
     text-align: left;
