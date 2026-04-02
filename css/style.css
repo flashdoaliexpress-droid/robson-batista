@@ -376,6 +376,8 @@ ul  { list-style: none; }
   z-index: 2;
   width: 100%;
   align-self: stretch;
+  display: flex;
+  align-items: center;
   padding-top: 60px;
   padding-bottom: 80px;
 }
