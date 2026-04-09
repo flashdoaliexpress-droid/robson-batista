@@ -1334,6 +1334,8 @@ ul  { list-style: none; }
 
   .hero__eyebrow {
     left: 18px;
+    font-size: 1.1rem;
+    top: calc(var(--nav-h) + 20px);
   }
 
   /* Sections */
