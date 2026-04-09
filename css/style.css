@@ -391,13 +391,13 @@ ul  { list-style: none; }
 .hero__eyebrow {
   display: block;
   font-family: var(--sans);
-  font-size: 0.67rem;
+  font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.24em;
   text-transform: uppercase;
   color: var(--accent);
   position: absolute;
-  top: calc(var(--nav-h) + 60px);
+  top: calc(var(--nav-h) + 40px);
   left: 28px;
   z-index: 3;
   margin: 0;
